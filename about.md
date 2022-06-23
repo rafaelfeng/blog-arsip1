@@ -1,0 +1,9 @@
+---
+layout: page
+title: About
+sidebar_order: 5
+---
+
+Hi! I'm Yan Sheng, a Year 4 undergrad math major at the National University of Singapore. In this site I record some of the math I get excited about, as well as notes for courses I am taking.
+
+This site is built with [Jekyll](http://jekyllrb.com/). The theme is modified from [Lanyon](http://lanyon.getpoole.com) by [@mdo](https://twitter.com/mdo), open sourced under the [MIT license]({{site.baseurl}}/LICENSE.txt). Math typesetting by [KaTeX](https://katex.org/).

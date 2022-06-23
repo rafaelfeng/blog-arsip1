@@ -1,0 +1,46 @@
+# Permalinks
+permalink:           pretty
+
+# Setup
+title:               Yan Sheng's site
+tagline:             'A math blog'
+description:         >- # this means to ignore newlines until "baseurl:"
+                     Welcome to my site!
+# url:                 http://lanyon.getpoole.com
+baseurl:             ''
+
+# About/contact
+# author:
+#   name:              Mark Otto
+#   url:               https://twitter.com/mdo
+#   email:             markdotto@gmail.com
+
+# Custom vars
+# version:             1.0.0
+
+# Plugins
+# plugins: [jekyll-paginate]
+# paginate: 5
+# paginate_path: "page:num" 
+plugins: []
+
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter_opts:
+    disable: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: post
+    values:
+      permalink: /:categories/:title
+      excerpt_separator: '<!--more-->'
+  -
+    scope:
+      path: ""
+    values:
+      math_typeset: "katex"
+      sidebar_order: 0

@@ -1,0 +1,24 @@
+comments:
+  allowedFields: ["name","email","website","comment"]
+  requiredFields: ["name","comment"]
+  branch: "master"
+  commitMessage: "Comment on {options.slug} from {fields.name}"
+
+  filename: "comment-{@timestamp}-{@id}"
+  format: "yml"
+  path: "_data/comments/{options.slug}"
+  generatedFields:
+    name-md5:
+      type: slugify
+      options:
+        field: name
+    date:
+      type: date
+      options:
+        format: "iso8601"
+
+  moderation: true
+
+  transforms:
+    email: md5
+    name-md5: md5
